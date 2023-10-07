@@ -83,7 +83,7 @@ export class CloudFunction {
       this._data.source.compiled,
       FunctionCache.requireFunc,
     )
-
+    //执行函数调用
     this.result = await engine.run(param, {
       filename: `CloudFunction.${this.name}`,
       timeout: this.timeout,

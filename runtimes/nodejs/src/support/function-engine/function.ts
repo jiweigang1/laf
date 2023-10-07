@@ -56,6 +56,7 @@ export class CloudFunction {
    * function code
    */
   get code() {
+    // 这里是函数的代码
     return this._data.source.code
   }
 

@@ -61,6 +61,7 @@ export class CloudFunction {
   }
 
   /**
+   * 这里是编译后的代码
    * compiled code
    */
   get compiledCode() {

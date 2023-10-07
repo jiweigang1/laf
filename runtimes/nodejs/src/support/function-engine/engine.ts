@@ -19,6 +19,7 @@ export class FunctionEngine {
   script: vm.Script
   //执行的代码
   constructor(code: string, require_func?: RequireFuncType) {
+    //初始化的时候传的 ID？
     this.script = FunctionVm.createVM(this.wrap(code), {})
     this.requireFunc = require_func ?? defaultRequireFunction
   }
@@ -62,6 +63,7 @@ export class FunctionEngine {
   }
 
   /**
+   * 
    * wrap function code
    */
   wrap(code: string): string {

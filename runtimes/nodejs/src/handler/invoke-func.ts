@@ -55,7 +55,7 @@ export async function handleInvokeFunction(req: IRequest, res: Response) {
       return res.status(404).send('Function Not Found')
     }
   }
-
+  //函数数据是从DB中获取的，代码是从哪里获取的？
   const func = new CloudFunction(funcData)
 
   // reject while no HTTP enabled

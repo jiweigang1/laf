@@ -17,7 +17,7 @@ export class FunctionEngine {
   requireFunc: RequireFuncType
 
   script: vm.Script
-
+  //执行的代码
   constructor(code: string, require_func?: RequireFuncType) {
     this.script = FunctionVm.createVM(this.wrap(code), {})
     this.requireFunc = require_func ?? defaultRequireFunction
